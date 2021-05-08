@@ -15,48 +15,142 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Itim&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Exo+2:ital,wght@1,200&family=Itim&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap" rel="stylesheet">
     <style>
-        .page1{
-            margin-top: -8px;
-            margin-left: -8px;
-            background: url(https://source.unsplash.com/WLUHO9A_xik/1600x900);
+        body{
+            margin: 0;
+            padding: 0;
+            height: 4000px;
+        }
+        #page1{
+            background-color: rgb(46, 46, 46);
+        }
+        .bg1{
+            padding-top: 10px;
+           background:rgba(0, 0, 0, 0.5) url(./assets/bg.jpg);
+            background-blend-mode: darken;
             background-repeat: no-repeat;
             background-size: cover;
             height: 100vh;
             width: 100vw;
         }
         .navbar{
-           
-            border: 1px solid red;
+        
+            width: 100%;
+        position: sticky;
+        top: 0;
+           background-color: rgba(0, 0, 0, 0.24);
+            border: 1px solid rgb(0, 0, 0);
              }
             .navigation{
                 display: flex;
-                justify-content: center;
+                flex-wrap: wrap; }
+            #li-padding{
+                padding-left: 300px;
             }
             .navigation li{
                 list-style: none;
-                padding-left: 20px;
-                font-family: 'Balsamiq Sans', cursive;
-                font-size: 30px;
-                color: #31326f;
+                padding-left: 70px;
+                font-family:Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 20px;
+                color:#ffffff;
                 
             }
-
-    </style>
+            .navigation li:hover{
+                color: #a1fff7;   
+                cursor: pointer;
+                text-decoration:underline;
+               text-shadow: 2px 2px 3px black;
+               
+              }
+            #search{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+                color: rgb(255, 255, 255);
+                margin-left: 180px;
+                border-radius: 40px;
+                text-align: center;
+                background-color:rgba(255, 218, 218, 0);
+                border: 3px solid rgb(255, 255, 255);
+                padding: 0 10px;
+            }
+           #head1{
+            font-family: 'Comfortaa', cursive;
+               font-size: 80px;
+               text-align: center;
+               padding-top: 10px;
+               color: white;
+           }
+         #head2{
+             padding-left: 27%;
+             font-family: 'Itim', cursive;
+             
+             }
+             .typewrite{
+                padding-top: -100px;
+                 text-decoration: none;
+                 color: honeydew;
+             font-size: 70px;
+                }
+#photo{
+    border: 1px solid rgb(255, 255, 255);
+    height: 250px;
+    width: 250px;
+    border-radius: 150px;
+    margin-left: 40%;
+background-image: url(./assets/me.jpg);
+background-size: 250px 250px;
+}
+.hire{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    margin-top: 2%;
+  margin-left: 45%;
+  
+  border: 3px solid rgb(255, 249, 160);
+  padding: 18px;
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0.123);
+    color: wheat;
+}
+.hire:hover{
+    cursor: pointer;
+    background-color: #f8f694;
+    color: rgb(0, 0, 0);
+    border: 4px solid rgb(66, 66, 66);
+}
+ </style>
 </head>
 <body>
-    <div class="page1">
+  <div id="page1">
     <div class="navbar">
        <ul class="navigation">
-           <li>HOME</li>
-           <li>My Resume</li>
-           <li>About Me</li>
-           <li>Contact Me</li>
-    </ul>
+        <!-- <img src="https://img.icons8.com/ios/64/000000/home--v1.png"/> -->
+           <li id="li-padding">HOME</li>
+           <li>MY SKILLS</li>
+           <li>ABOUT ME</li>
+           <li>CONTACT ME</li>
+           <input type="text" id="search" placeholder="Search Here">
+        </ul>
     </div>
-    </div>
+   <div class="bg1">
+<h1 id="head1"> Hey there, I am Sachin!</h1>
+<div id="photo">
+hey bro
+</div>
+<h1 id="head2">
+    <a href="" class="typewrite" data-period="2000" data-type='[ "I am a Web Developer.", "I am a Coder.", "I am a Video Editor.", "I am a Dancer." ]'>
+      <span class="wrap"></span>
+    </a></h1>
+   
+<button class="hire">Hire Me</button>
+ 
+
+   </div>
+</div>
     
 </body>
 <script src="./js/script.js"></script>
