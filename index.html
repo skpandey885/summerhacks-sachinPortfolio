@@ -15,17 +15,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Spartan&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Itim&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Exo+2:ital,wght@1,200&family=Itim&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
     <style>
-        body{
-            margin: 0;
-            padding: 0;
-            height: 4000px;
-        }
+     
+        html,body{
+    width: 100%;
+    height: 4000px;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
         #page1{
             background-color: rgb(46, 46, 46);
         }
@@ -35,7 +44,7 @@
             background-blend-mode: darken;
             background-repeat: no-repeat;
             background-size: cover;
-            height: 100vh;
+            height: 105vh;
             width: 100vw;
         }
         .navbar{
@@ -78,6 +87,12 @@
                 padding: 0 10px;
             }
            #head1{
+            
+             text-shadow:
+              -2px -1px 0 #000,  
+               2px -1px 0 #000,
+               -2px 1px 0 #000,
+               2px 1px 0 #000;
             font-family: 'Comfortaa', cursive;
                font-size: 80px;
                text-align: center;
@@ -87,15 +102,14 @@
          #head2{
              padding-left: 27%;
              font-family: 'Itim', cursive;
-             
-             }
+              }
              .typewrite{
                 padding-top: -100px;
                  text-decoration: none;
                  color: honeydew;
              font-size: 70px;
                 }
-#photo{
+              #photo{
     border: 1px solid rgb(255, 255, 255);
     height: 250px;
     width: 250px;
@@ -107,8 +121,7 @@ background-size: 250px 250px;
 .hire{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
-    margin-top: 2%;
-  margin-left: 45%;
+     margin-left: 45%;
   
   border: 3px solid rgb(255, 249, 160);
   padding: 18px;
@@ -118,10 +131,143 @@ background-size: 250px 250px;
 }
 .hire:hover{
     cursor: pointer;
-    background-color: #f8f694;
-    color: rgb(0, 0, 0);
-    border: 4px solid rgb(66, 66, 66);
+    background-color: #dbf6e9;
+    color: rgb(29, 23, 23);
+border: 2px solid darkturquoise;
 }
+#page2{
+    background: rgba(14, 14, 14, 0.52) url(./assets/bg2.1.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-blend-mode:darken;
+           
+    height:102vh;
+    width: 100vw;
+}
+.techtext{
+    font-family: 'Spartan', sans-serif;
+  padding-top: 100px;
+    font-size: 95px;
+    color: #dbf6e9;
+  padding-left: 20px;
+    }
+#logos{
+   padding-left: 33%;
+ padding-top: 30px;
+ }
+  #logos img{
+     width: 150px;
+   height: 150px;
+  }
+  #logos div{
+      padding-left: 0%;
+      padding-top: 20px;
+  }
+  div[class*=box] {
+  height: 33.33%;
+  width: 100%; 
+  display: flex;
+  padding-left: 40%;
+  align-items: center;
+}
+.btn {
+  line-height: 50px;
+  height: 50px;
+  text-align: center;
+  width: 250px;
+  cursor: pointer;
+  margin-bottom: 100px;
+}
+.btn-one {
+  color: #FFF;
+  transition: all 0.3s;
+  position: relative;
+}
+.btn-one span {
+  
+    font-family: 'Comfortaa', cursive;
+  transition: all 0.3s;
+}
+.btn-one::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-top-color: rgba(255,255,255,0.5);
+  border-bottom-color: rgba(255,255,255,0.5);
+  transform: scale(0.1, 1);
+}
+.btn-one:hover span {
+  color: #a1fff7;
+  letter-spacing: 2px;
+}
+.btn-one:hover::before {
+  opacity: 1; 
+  transform: scale(1, 1); 
+}
+.btn-one::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.3s;
+  background-color: rgba(255,255,255,0.1);
+}
+.btn-one:hover::after {
+  opacity: 0; 
+  transform: scale(0.1, 1);
+}
+#page3{
+  background: rgba(0, 0, 0, 0.5) url(./assets/bg3.1.jpg);
+  height: 101vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: darken;
+}
+#page3{
+ display: flex;
+}
+.mydata{
+  border: 3px double #ffffff;
+  height: 80vh;
+  width:30vw;
+ margin-left: 140px;
+margin-top: 50px;
+text-align: center;
+font-family: 'Roboto Mono', monospace;
+}
+#page3 h1{
+  font-size: 150px;
+  color: #a1fff7;
+  padding-left: 100px;
+  padding-top: 10%;
+  font-family: 'Itim', cursive;
+  text-shadow:
+              -2px -1px 0 #000,  
+               2px -1px 0 #000,
+               -2px 1px 0 #000,
+               2px 1px 0 #000;
+}
+#page3 h1:hover{
+  color: rgb(250, 221, 167);
+  cursor: pointer;
+ 
+
+}
+
  </style>
 </head>
 <body>
@@ -142,15 +288,44 @@ background-size: 250px 250px;
 hey bro
 </div>
 <h1 id="head2">
-    <a href="" class="typewrite" data-period="2000" data-type='[ "I am a Web Developer.", "I am a Coder.", "I am a Video Editor.", "I am a Dancer." ]'>
+    <a href="" class="typewrite" data-period="2000" data-type='[ "I am a Web Developer.", "I am a Programmer", "I am a Video Editor.","I am Freelancer."]'>
       <span class="wrap"></span>
     </a></h1>
    
 <button class="hire">Hire Me</button>
- 
+ </div>
+ </div>
+ <div id="page2">
+     <div class="techtext">
+  Tech That I'm Familiar With
+</div>
+<div id="logos">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" /> 
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java"/>
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" /> 
+   <div>
+    <img src="https://logodownload.org/wp-content/uploads/2019/10/adobe-premiere-pro-logo.png" alt="adobe-premiere-pro-logo" />
+       <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" />
+     <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git"/> 
+       </div>
+    </div>
+    <div class="box-1">
+        <div class="btn btn-one">
+          <span>PING ME!</span>
+        </div>
+      </div>
+ </div>
+ <div id="page3">
+   <h1>About Me</h1>
+   <div class="mydata">
+     <h2>Hey There 👋🏻</h2>
+     <p> My Name is Sachin Pandey. </p>
+     <p>And I am A Programmer,Web Developer &
+        Video Editor</p>
 
    </div>
-</div>
+
+ </div>
     
 </body>
 <script src="./js/script.js"></script>
