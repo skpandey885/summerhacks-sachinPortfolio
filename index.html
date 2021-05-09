@@ -15,6 +15,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Spartan&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Itim&display=swap" rel="stylesheet">
@@ -29,8 +31,9 @@
     <style>
      
         html,body{
+          
     width: 100%;
-    height: 4000px;
+    height: 100%;
     margin: 0px;
     padding: 0px;
     overflow-x: hidden; 
@@ -247,7 +250,10 @@ border: 2px solid darkturquoise;
  margin-left: 140px;
 margin-top: 50px;
 text-align: center;
-font-family: 'Roboto Mono', monospace;
+font-family: 'Poppins', monospace;
+background:#9ddfd3;
+-webkit-box-shadow: 0 0 40px rgb(255, 255, 255);
+        box-shadow: 0 0 40px rgb(179, 179, 179);
 }
 #page3 h1{
   font-size: 150px;
@@ -264,9 +270,90 @@ font-family: 'Roboto Mono', monospace;
 #page3 h1:hover{
   color: rgb(250, 221, 167);
   cursor: pointer;
- 
+}
+.mydata h2{
+  color: #000000;
+text-decoration: underline;
+}
+.mydata:hover{
+  background: rgb(250, 221, 167);
+  cursor: pointer;
+}
+.page4{
+  background: rgba(0, 0, 0, 0.5) url(./assets/contactus.jpg);
+  height: 101vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: darken;
+  padding-top: 1px;
+}
+.form {
+margin-left: 27%;
+margin-top: 3%;
 
 }
+.page4 h1{
+  margin-left: 40%;
+  font-size: 70px;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: #414141;
+  text-shadow:
+              -2px -1px 0 rgb(255, 255, 255),  
+               2px -1px 0 rgb(247, 247, 247),
+               -2px 1px 0 rgb(255, 255, 255),
+               2px 1px 0 rgb(255, 255, 255);
+}
+.myname{
+  font-family: 'Poppins', monospace;
+  color: black;
+  padding: 20px; 
+  padding-right: 50%;
+  background-color: #dbf6e9;
+  margin: 10px;
+  box-shadow: 2px 2px rgb(0, 0, 0);
+}
+.myinfo{
+  font-family: 'Poppins', monospace;
+  margin: 10px;
+  padding: 20px;
+  padding-right: 16.6%;
+  background-color: #dbf6e9;
+  box-shadow: 2px 2px rgb(0, 0, 0);
+}
+textarea{
+   background-color: #dbf6e9;
+  margin: 10px;
+  padding: 20px;
+  font-family: 'Poppins', monospace;
+ 
+  box-shadow: 2px 2px rgb(0, 0, 0);
+}
+.submit-btn {
+ margin-left: 60.5%;
+    padding: 7px 35px;
+    border-radius: 60px;
+    display: inline-block;
+    background-color: #4b8cfb;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.06),
+              0 2px 10px 0 rgba(0,0,0,0.07);
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease;
+    font-family: 'Poppins', monospace;
+}
+
+.submit-btn:hover {
+    transform: translateY(1px);
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.10),
+              0 1px 1px 0 rgba(0,0,0,0.09);
+}
+
+
+
+
 
  </style>
 </head>
@@ -277,8 +364,8 @@ font-family: 'Roboto Mono', monospace;
         <!-- <img src="https://img.icons8.com/ios/64/000000/home--v1.png"/> -->
            <li id="li-padding">HOME</li>
            <li>MY SKILLS</li>
-           <li>ABOUT ME</li>
-           <li>CONTACT ME</li>
+           <li>ABOUT</li>
+           <li>CONTACT US</li>
            <input type="text" id="search" placeholder="Search Here">
         </ul>
     </div>
@@ -319,14 +406,32 @@ hey bro
    <h1>About Me</h1>
    <div class="mydata">
      <h2>Hey There 👋🏻</h2>
-     <p> My Name is Sachin Pandey. </p>
-     <p>And I am A Programmer,Web Developer &
-        Video Editor</p>
-
-   </div>
-
+     <p> My Name is <strong>Sachin Pandey.</strong>  </p>
+     <p>I am A <strong> Programmer,Web Developer <br>
+     & Video Editor. </strong>👨🏻‍💻</p>
+     <div>I am a Tech Enthusiast & I Love Learning  New Technologies.
+       I Want to help the  Tech-community <br> to grow. I am fond of Learning.
+       <br> And I Want To keep the good work going and add value to the Lives of People.
+     </div>
+   
+     <div>
+       I Love Attending Sessions, Participate In <strong>Hackathons</strong>  , make new Projects. I Always Try <br> to communicate with Different People and build Network.
+       As I'm a Beginner So Still in <br> Learning Phase! And I Like Contributing in <br><strong>Open Source Organisations </strong> and <strong>Projects.</strong>  I also Do <strong>Freelancing</strong>  <br> and Already did Some Projects Related to Video Editing.
+     </div>
  </div>
-    
+ </div>
+    <div class="page4">
+      <h1>Contact Us</h1>
+<div class="form">
+  <form action="backden.php">
+<input type="text" placeholder="Name" class="myname"><br>
+<input type="text" placeholder="Email" class="myinfo">
+<input type="text" placeholder="Phone Number" class="myinfo"><br>
+<textarea name="" id="" cols="103" rows="10" placeholder="Write Your Message Here.."></textarea>
+  </form>
+</div>
+<div class="btn-lrg submit-btn">Send Message</div>
+    </div>
 </body>
 <script src="./js/script.js"></script>
 </html>
