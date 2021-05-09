@@ -5,8 +5,6 @@
     Use this template: https://github.com/SOACodeRoom/summerhacks-projectName/generate
     index.html: You will write your html code for your portfolio website here.
  -->
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,6 +12,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -28,334 +27,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
-    <style>
-     
-        html,body{
-          
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden; 
-}
-        #page1{
-            background-color: rgb(46, 46, 46);
-        }
-        .bg1{
-            padding-top: 10px;
-           background:rgba(0, 0, 0, 0.5) url(./assets/bg.jpg);
-            background-blend-mode: darken;
-            background-repeat: no-repeat;
-            background-size: cover;
-            height: 105vh;
-            width: 100vw;
-        }
-        .navbar{
-        
-            width: 100%;
-        position: sticky;
-        top: 0;
-           background-color: rgba(0, 0, 0, 0.24);
-            border: 1px solid rgb(0, 0, 0);
-             }
-            .navigation{
-                display: flex;
-                flex-wrap: wrap; }
-            #li-padding{
-                padding-left: 300px;
-            }
-            .navigation li{
-                list-style: none;
-                padding-left: 70px;
-                font-family:Verdana, Geneva, Tahoma, sans-serif;
-                font-size: 20px;
-                color:#ffffff;
-                
-            }
-            .navigation li:hover{
-                color: #a1fff7;   
-                cursor: pointer;
-                text-decoration:underline;
-               text-shadow: 2px 2px 3px black;
-               
-              }
-            #search{
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-                color: rgb(255, 255, 255);
-                margin-left: 180px;
-                border-radius: 40px;
-                text-align: center;
-                background-color:rgba(255, 218, 218, 0);
-                border: 3px solid rgb(255, 255, 255);
-                padding: 0 10px;
-            }
-           #head1{
-            
-             text-shadow:
-              -2px -1px 0 #000,  
-               2px -1px 0 #000,
-               -2px 1px 0 #000,
-               2px 1px 0 #000;
-            font-family: 'Comfortaa', cursive;
-               font-size: 80px;
-               text-align: center;
-               padding-top: 10px;
-               color: white;
-           }
-         #head2{
-             padding-left: 27%;
-             font-family: 'Itim', cursive;
-              }
-             .typewrite{
-                padding-top: -100px;
-                 text-decoration: none;
-                 color: honeydew;
-             font-size: 70px;
-                }
-              #photo{
-    border: 1px solid rgb(255, 255, 255);
-    height: 250px;
-    width: 250px;
-    border-radius: 150px;
-    margin-left: 40%;
-background-image: url(./assets/me.jpg);
-background-size: 250px 250px;
-}
-.hire{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
-     margin-left: 45%;
-  
-  border: 3px solid rgb(255, 249, 160);
-  padding: 18px;
-  border-radius: 50px;
-  background-color: rgba(255, 255, 255, 0.123);
-    color: wheat;
-}
-.hire:hover{
-    cursor: pointer;
-    background-color: #dbf6e9;
-    color: rgb(29, 23, 23);
-border: 2px solid darkturquoise;
-}
-#page2{
-    background: rgba(14, 14, 14, 0.52) url(./assets/bg2.1.jpg);
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-blend-mode:darken;
-           
-    height:102vh;
-    width: 100vw;
-}
-.techtext{
-    font-family: 'Spartan', sans-serif;
-  padding-top: 100px;
-    font-size: 95px;
-    color: #dbf6e9;
-  padding-left: 20px;
-    }
-#logos{
-   padding-left: 33%;
- padding-top: 30px;
- }
-  #logos img{
-     width: 150px;
-   height: 150px;
-  }
-  #logos div{
-      padding-left: 0%;
-      padding-top: 20px;
-  }
-  div[class*=box] {
-  height: 33.33%;
-  width: 100%; 
-  display: flex;
-  padding-left: 40%;
-  align-items: center;
-}
-.btn {
-  line-height: 50px;
-  height: 50px;
-  text-align: center;
-  width: 250px;
-  cursor: pointer;
-  margin-bottom: 100px;
-}
-.btn-one {
-  color: #FFF;
-  transition: all 0.3s;
-  position: relative;
-}
-.btn-one span {
-  
-    font-family: 'Comfortaa', cursive;
-  transition: all 0.3s;
-}
-.btn-one::before {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  opacity: 0;
-  transition: all 0.3s;
-  border-top-width: 1px;
-  border-bottom-width: 1px;
-  border-top-style: solid;
-  border-bottom-style: solid;
-  border-top-color: rgba(255,255,255,0.5);
-  border-bottom-color: rgba(255,255,255,0.5);
-  transform: scale(0.1, 1);
-}
-.btn-one:hover span {
-  color: #a1fff7;
-  letter-spacing: 2px;
-}
-.btn-one:hover::before {
-  opacity: 1; 
-  transform: scale(1, 1); 
-}
-.btn-one::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  transition: all 0.3s;
-  background-color: rgba(255,255,255,0.1);
-}
-.btn-one:hover::after {
-  opacity: 0; 
-  transform: scale(0.1, 1);
-}
-#page3{
-  background: rgba(0, 0, 0, 0.5) url(./assets/bg3.1.jpg);
-  height: 101vh;
-  width: 100vw;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-blend-mode: darken;
-}
-#page3{
- display: flex;
-}
-.mydata{
-  border: 3px double #ffffff;
-  height: 80vh;
-  width:30vw;
- margin-left: 140px;
-margin-top: 50px;
-text-align: center;
-font-family: 'Poppins', monospace;
-background:#9ddfd3;
--webkit-box-shadow: 0 0 40px rgb(255, 255, 255);
-        box-shadow: 0 0 40px rgb(179, 179, 179);
-}
-#page3 h1{
-  font-size: 150px;
-  color: #a1fff7;
-  padding-left: 100px;
-  padding-top: 10%;
-  font-family: 'Itim', cursive;
-  text-shadow:
-              -2px -1px 0 #000,  
-               2px -1px 0 #000,
-               -2px 1px 0 #000,
-               2px 1px 0 #000;
-}
-#page3 h1:hover{
-  color: rgb(250, 221, 167);
-  cursor: pointer;
-}
-.mydata h2{
-  color: #000000;
-text-decoration: underline;
-}
-.mydata:hover{
-  background: rgb(250, 221, 167);
-  cursor: pointer;
-}
-.page4{
-  background: rgba(0, 0, 0, 0.5) url(./assets/contactus.jpg);
-  height: 101vh;
-  width: 100vw;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-blend-mode: darken;
-  padding-top: 1px;
-}
-.form {
-margin-left: 27%;
-margin-top: 3%;
-
-}
-.page4 h1{
-  margin-left: 40%;
-  font-size: 70px;
-  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  color: #414141;
-  text-shadow:
-              -2px -1px 0 rgb(255, 255, 255),  
-               2px -1px 0 rgb(247, 247, 247),
-               -2px 1px 0 rgb(255, 255, 255),
-               2px 1px 0 rgb(255, 255, 255);
-}
-.myname{
-  font-family: 'Poppins', monospace;
-  color: black;
-  padding: 20px; 
-  padding-right: 50%;
-  background-color: #dbf6e9;
-  margin: 10px;
-  box-shadow: 2px 2px rgb(0, 0, 0);
-}
-.myinfo{
-  font-family: 'Poppins', monospace;
-  margin: 10px;
-  padding: 20px;
-  padding-right: 16.6%;
-  background-color: #dbf6e9;
-  box-shadow: 2px 2px rgb(0, 0, 0);
-}
-textarea{
-   background-color: #dbf6e9;
-  margin: 10px;
-  padding: 20px;
-  font-family: 'Poppins', monospace;
- 
-  box-shadow: 2px 2px rgb(0, 0, 0);
-}
-.submit-btn {
- margin-left: 60.5%;
-    padding: 7px 35px;
-    border-radius: 60px;
-    display: inline-block;
-    background-color: #4b8cfb;
-    color: white;
-    font-size: 18px;
-    cursor: pointer;
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.06),
-              0 2px 10px 0 rgba(0,0,0,0.07);
-    -webkit-transition: all 300ms ease;
-    transition: all 300ms ease;
-    font-family: 'Poppins', monospace;
-}
-
-.submit-btn:hover {
-    transform: translateY(1px);
-    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.10),
-              0 1px 1px 0 rgba(0,0,0,0.09);
-}
-
-
-
-
-
- </style>
 </head>
 <body>
   <div id="page1">
@@ -366,7 +37,7 @@ textarea{
            <li>MY SKILLS</li>
            <li>ABOUT</li>
            <li>CONTACT US</li>
-           <input type="text" id="search" placeholder="Search Here">
+           <input type="text" id="search" placeholder="Search Here"> 
         </ul>
     </div>
    <div class="bg1">
@@ -379,7 +50,7 @@ hey bro
       <span class="wrap"></span>
     </a></h1>
    
-<button class="hire">Hire Me</button>
+<button class="hire"><a href="./Extra/sent.html">Hire Me</a> </button>
  </div>
  </div>
  <div id="page2">
@@ -423,14 +94,24 @@ hey bro
     <div class="page4">
       <h1>Contact Us</h1>
 <div class="form">
-  <form action="backden.php">
+  <form action="backend.php">
 <input type="text" placeholder="Name" class="myname"><br>
 <input type="text" placeholder="Email" class="myinfo">
 <input type="text" placeholder="Phone Number" class="myinfo"><br>
-<textarea name="" id="" cols="103" rows="10" placeholder="Write Your Message Here.."></textarea>
+<textarea name="" id="" cols="103" rows="5" placeholder="Write Your Message Here.."></textarea>
   </form>
 </div>
-<div class="btn-lrg submit-btn">Send Message</div>
+<div class="btn-lrg submit-btn"> <a href="./Extra/sent.html">Send Message</a> </div>
+<div id="connect"><h3>Connect With Me:</h3>
+  <p>
+  <a href="https://linkedin.com/in/skpandey885" target="_blank" ><img src="https://www.freeiconspng.com/uploads/linkedin-logo-3.png" height="45" width="50" /></a>
+  <a href="https://stackoverflow.com/users/15839659" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Stack_Overflow_icon.svg" height="45" width="50" /></a>
+    <a href="https://auth.geeksforgeeks.org/user/skpandey885" target="_blank"><img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190710102234/download3.png"  height="45" width="50" /></a>
+  <a href="https://instagram.com/iamsachin_47" target="_blank"><img src="https://www.freepnglogos.com/uploads/instagram-logo-png-transparent-0.png" height="45" width="50" /></a>
+  <a href="https://www.hackerrank.com/skpandey885" target="_blank"><img src="https://www.iconfinder.com/icons/4373234/download/png/64" height="45" width="50" /></a>
+  <a href="https://www.hackerearth.com/@skpandey885" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e8/HackerEarth_logo.png" height="45" width="50" /></a>
+  
+  </p></div>
     </div>
 </body>
 <script src="./js/script.js"></script>
